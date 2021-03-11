@@ -165,6 +165,7 @@
         background-position-y: top;
         &__img{
             width: 64px;
+            margin-left: 25px;
         }
         p{
             text-align: left;
@@ -202,6 +203,12 @@
             p{
                 line-height: revert;
             }
+        }
+    }
+
+    .reviews{
+        &__red-box{
+            transform: translateY(-50%);
         }
     }
 }

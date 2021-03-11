@@ -1,13 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-size: 18px; }
+  box-sizing: border-box; }
 
 body {
   background-color: #F9FDFF;
   font-family: 'Montserrat', sans-serif;
-  color: #1E1E1E; }
+  color: #1E1E1E;
+  font-size: 18px; }
 
 img {
   width: 100%; }
@@ -20,10 +20,13 @@ input:focus {
   background-color: #B12356; }
 
 .mt-section {
-  margin-top: 6vw; }
+  margin-top: 10vw; }
 
 .text-red {
   color: #b12356; }
+
+.text-grey {
+  color: #888888; }
 
 .fw-100 {
   font-weight: 100; }
@@ -356,3 +359,95 @@ input:focus {
     .object__center-block p {
       line-height: revert;
       text-align: left; }
+
+.step {
+  margin-top: 250px; }
+  .step__card {
+    border: none;
+    background-color: transparent;
+    position: relative; }
+    .step__card img {
+      width: 100px;
+      display: block; }
+    .step__card::after, .step__card::before {
+      position: absolute;
+      top: 260px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .step__card::after {
+      content: '\2192';
+      font-family: monospace;
+      font-size: 26px;
+      color: #C7C7C7; }
+    .step__card::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid #C7C7C7; }
+
+.know__box-input {
+  width: 100%;
+  position: relative; }
+  .know__box-input__ico {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px; }
+  .know__box-input input {
+    width: 100%;
+    padding: 25px 0 25px 50px; }
+
+.know__box-check-box {
+  border-radius: 15px;
+  border: 1px solid #D9E0E8;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px; }
+  .know__box-check-box p {
+    margin-right: 2vw; }
+
+.form_radio_btn {
+  display: inline-block;
+  margin-right: 2px; }
+
+.form_radio_btn input[type=radio] {
+  display: none; }
+
+.form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #D9E0E8;
+  border-radius: 6px;
+  user-select: none;
+  color: #888888; }
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+  background: #B12356;
+  color: #fff; }
+
+/* Hover */
+.form_radio_btn label:hover {
+  color: #666; }
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+  background: #efefef;
+  color: #666; }
+
+.form-check-input:checked {
+  border: none;
+  background-color: #B12356; }
+
+.just {
+  padding-bottom: 5vw; }
+
+.reviews {
+  background-image: url(../img/reviews/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
