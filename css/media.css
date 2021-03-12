@@ -5,6 +5,8 @@
   .title_medium {
     font-size: 36px;
     font-weight: 900; }
+  .title_tiny {
+    font-size: 24px; }
   .subtitle {
     text-align: left; }
     .subtitle_big {
@@ -41,7 +43,10 @@
     .calc__dis__btn-con {
       grid-area: btn-con; }
     .calc__dis::after, .calc__dis::before {
-      display: none; } }
+      display: none; }
+  .link-tel {
+    text-decoration: none;
+    font-size: 36px; } }
 
 @media (min-width: 1200px) {
   .container-form-index {
@@ -139,7 +144,25 @@
       .object__center-block p {
         line-height: revert; }
   .reviews__red-box {
-    transform: translateY(-50%); } }
+    transform: translateY(-50%); }
+  .reviews__box {
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #DCDCDC;
+    margin: 0 10px; }
+    .reviews__box__header img {
+      width: 93px; }
+    .reviews__box__name {
+      margin-left: 15px; }
+    .reviews__box__text {
+      font-size: 14px; }
+  .footer__img {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    max-width: 500px;
+    width: 100%; } }
 
 @media (min-width: 1400px) {
   .container {

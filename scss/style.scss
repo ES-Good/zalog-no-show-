@@ -11,8 +11,8 @@ body{
     font-size: 18px;
 }
 
-img{
-    width: 100%;
+.bg-gray{
+    background-color: #F0F3F6;
 }
 
 input{
@@ -35,6 +35,19 @@ input{
 }
 .text-grey{
     color: #888888;
+}
+
+.fz-12{
+    font-size: 12px;
+}
+
+.text-yellow{
+    color: #FEE668;
+}
+
+.link-tel{
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .fw-100{
@@ -83,7 +96,7 @@ input{
         font-size: 30px;
     }
     &_tiny{
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -132,6 +145,7 @@ input{
     &_yellow{
         background-color: #FEE668;
         color: #1E1E1E;
+        z-index: 2;
     }
 }
 
@@ -571,4 +585,43 @@ input{
     background-image: url(../img/reviews/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 120px;
+
+    &__container{
+        overflow-x: auto;
+        &__inner{
+
+        }
+    }
+
+    &__box{
+        width: 400px;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #DCDCDC;
+        margin: 0 10px;
+        &__header{
+            img{
+                width: 93px;
+            }
+        }
+        &__name{
+            margin-left: 15px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+    }
+}
+
+.footer{
+    padding-top: 200px;
+    &__mobile-img{
+        width: 230px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -10px;
+        z-index: 1;
+    }
 }

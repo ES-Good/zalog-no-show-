@@ -8,6 +8,9 @@
             font-size: 36px;
             font-weight: 900;
         }
+        &_tiny{
+            font-size: 24px;
+        }
     }
     .subtitle{
         text-align: left;
@@ -68,6 +71,10 @@
                 display: none;
             }
         }
+    }
+    .link-tel{
+        text-decoration: none;
+        font-size: 36px;
     }
 }
 
@@ -209,6 +216,40 @@
     .reviews{
         &__red-box{
             transform: translateY(-50%);
+        }
+        &__container{
+            &__inner{
+    
+            }
+        }
+    
+        &__box{
+            width: 400px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #DCDCDC;
+            margin: 0 10px;
+            &__header{
+                img{
+                    width: 93px;
+                }
+            }
+            &__name{
+                margin-left: 15px;
+            }
+            &__text{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer{
+        &__img{
+            position: absolute;
+            bottom: 0;
+            right: 15%;
+            max-width: 500px;
+            width: 100%;
         }
     }
 }
